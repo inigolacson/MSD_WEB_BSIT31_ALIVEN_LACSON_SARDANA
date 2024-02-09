@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSer | Form</title>
+  <!-- Box Icons -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Link To CSS -->
+  <link rel="stylesheet" href="form.css">
+  <!-- Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">
+            <img src="img/bannerlogo.png" alt="">
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./form.html">Form</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section class="form" id="form">
+        <div class="container">  
+            <form id="medicalForm" class="contact" action="https://script.google.com/macros/s/AKfycbz_5c7xvb4v0xxNHSiY3Dx47TxhoYML32RDIRyWOCF3H7DvUHEQfTz0IgOB9X2v-rgIRA/exec" method="post">
+                <div class="title-form">
+                    <h1><strong>PUP Health Form</strong></h1>
+                </div>
+                
+                <div class="col50 colleft">
+                    <div class="wd50">
+                        <label for="studentName">Name</label>
+                        <input id="studentName" name="studentName" type="text" placeholder="Student Name" required autofocus>
+                    </div>
+                    <div class="wd50">
+                        <label for="Age">Age</label>
+                        <input id="Age" name="Age" type="text" placeholder="Age" required>
+                    </div>
+                    <div class="wd50">
+                        <label for="bloodType">Blood Type</label>
+                        <input id="bloodType" name="bloodType" type="text" placeholder="Blood Type" required>
+                    </div>
+                    <div class="wd50">
+                        <label for="pgName">Parent's Name / Guardian</label>
+                        <input id="pgName" name="pgName" type="text" placeholder="Parent's / Guardian Name" required>
+                    </div>
+                    <div class="wd50">
+                        <label for="cellNum">Cellphone</label>
+                        <input id="cellNum" name="cellNum" type="text" placeholder="Cellphone Number" required>
+                    </div>
+                    <div class="wd50">
+                        <label for="civStat">Civil Status</label>
+                        <input id="civStat" name="civStat" type="text" placeholder="Civil Status" required>
+                    </div>
+                    <div class="wd50">
+                        <label for="homeAdd">Home Address</label>
+                        <input id="homeAdd" name="homeAdd" type="text" placeholder="Home Address" required>
+                    </div>
+                </div>
+                
+                <div class="col50 colright">
+                    <div class="wd50">
+                        <label for="studNum">PUP Student No.</label>
+                        <input id="studNum" name="studNum" type="text" placeholder="Student Number" required>
+                    </div>
+                    <div class="wd50">
+                        <label for="sex">Sex</label>
+                        <input id="sex" name="sex" type="text" placeholder="Sex" required>
+                    </div>
+                    <div class="wd50">
+                        <label for="emailAdd">Email Address</label>
+                        <input id="emailAdd" name="emailAdd" type="email" placeholder="Email Address" required>
+
+                    </div>
+                </div>
+                
+                <div class="col50 colright">
+                    <div class="wd50">
+                        <label for="schoolYear">School Year</label>
+                        <input id="schoolYear" name="schoolYear" type="text" placeholder="School Year" required>
+                    </div>
+                    
+                </div>
+                
+                <div class="col50 colright">
+                    <div class="wd50">
+                        <label for="course">Course / College</label>
+                        <input id="course" name="course" type="text" placeholder="Course" required>
+                    </div>
+                </div>
+                
+            
+            <div class="wd100"><hr></div>
+            
+            <div class="wd100">
+                <h1><strong>PART II. MEDICAL HISTORY</strong></h1>
+            </div>
+
+                <div class="col50 colleft">
+                    <p><strong>1. Do you need medical attention or has known medical illness?</strong></p>
+                    <label for="yes"><input type="checkbox" id="yes" name="medical_attention">Yes</label>
+                    <label for="no"><input type="checkbox" id="no" name="medical_attention">No</label>
+                    <div id="medicalConditionError" class="error-container"></div> 
+                    <p>(Please check the following that apply and give more information as needed)</p>
+
+                    <label for="asthma"><input type="checkbox" id="asthma" name="medical_condition" value="Asthma">Asthma</label>
+                    <label for="diabetes"><input type="checkbox" id="diabetes" name="medical_condition" value="Diabetes">Diabetes</label>
+                    <label for="convulsion"><input type="checkbox" id="convulsion" name="medical_condition" value="Convulsion">Convulsion/Epilepsy</label>
+                    <label for="migrain"><input type="checkbox" id="migrain" name="medical_condition" value="Migraine">Migraine</label>
+
+                    <br>
+                    <br>
+
+                    <label for="loss_consciousness"><input type="checkbox" id="loss_consciousness" name="medical_condition" value="Loss of Consciousness">Loss of Consciousness</label>
+                    <label for="heart_disease"><input type="checkbox" id="heart_disease" name="medical_condition" value="Heart Disease">Heart Disease</label>
+                    <label for="hemophilia"><input type="checkbox" id="hemophilia" name="medical_condition" value="Hemophilia">Hemophilia</label>
+                    <label for="high_blood_pressure"><input type="checkbox" id="high_blood_pressure" name="medical_condition" value="High Blood Pressure">High Blood Pressure</label>
+
+                    <br>
+                    <br>
+
+                    <label for="eye_disease"><input type="checkbox" id="eye_disease" name="medical_condition" value="Eye Disease/Defect">Eye Disease/Defect</label>
+                    <label for="kidney_disease"><input type="checkbox" id="kidney_disease" name="medical_condition" value="Kidney Disease">Kidney Disease</label>
+                    <label for="hyperventilation"><input type="checkbox" id="hyperventilation" name="medical_condition" value="Hyperventilation">Hyperventilation</label>
+                    <label for="high_blood_pressure_2"><input type="checkbox" id="high_blood_pressure_2" name="medical_condition" value="High Blood Pressure">High Blood Pressure</label>
+
+                    <br>
+                    <br>
+
+                    <label for="accident_injuries"><input type="checkbox" id="accident_injuries" name="medical_condition" value="Accident Injuries">Accident Injuries</label>
+                    <label for="tuberculosis"><input type="checkbox" id="tuberculosis" name="medical_condition" value="Tuberculosis/Primary Complex">Tuberculosis/Primary Complex</label>
+
+
+                    <br>
+                    <br>
+
+                    <label for="others">Others (please indicate): <input type="text" id="others" name="others" value=""></label>
+
+                    <br>
+
+                    <p><strong>2. Additional Information for Students with Medical Conditions:</strong></p>
+                    <p>As a Parent/Guardian, I would like to declare that my child had a history of allergies to the following:</p>
+
+                    <br> 
+
+                    <label for="food">Food (Kindly type N/A if none): <input type="text" id="food" name="food_allergies" value=""></label>
+                    <label for="no_allergies">No Known Allergies (Kindly type N/A if none): <input type="text" id="no_allergies" name="no_allergies" value=""></label>
+                    
+                    <br>
+                    
+                    <p>Medicines:</p>
+                    <label for="aspirin"><input type="checkbox" id="aspirin" name="medicine" value="Aspirin">Aspirin</label>
+                    <label for="ibuprofen"><input type="checkbox" id="ibuprofen" name="medicine" value="Ibuprofen">Ibuprofen</label>
+                    <label for="amoxicillin"><input type="checkbox" id="amoxicillin" name="medicine" value="Amoxicillin">Amoxicillin</label>
+                    
+                    <br>
+                    
+                    <label for="mefenamic_acid"><input type="checkbox" id="mefenamic_acid" name="medicine" value="Mefenamic Acid">Mefenamic Acid</label>
+                    <label for="penicillin"><input type="checkbox" id="penicillin" name="medicine" value="Penicillin">Penicillin</label>
+                    
+                    <br>
+                    <br>
+
+                    <label for="others_medicines">Others (Kindly type N/A if none): <input type="text" id="others_medicines" name="others_medicines" value=""></label>
+
+                    <input type="hidden" id="medical_conditions_concatenated" name="medical_conditions_concatenated">
+                    <input type="hidden" id="medicine_concatenated" name="medicine_concatenated">
+                </div>
+
+                <div class="wd100">
+                    <h2><strong>PART III. PERSONAL HISTORY</strong></h2>
+                </div>
+
+                <div>
+                    <p>Cigarette Smoking:</p>
+                    <label for="smoking_yes"><input type="checkbox" id="smoking_yes" name="smoking" value="Yes">Yes</label>
+                    <label for="smoking_no"><input type="checkbox" id="smoking_no" name="smoking" value="No">No</label>
+
+                    <br>
+
+                    <p>Alcohol Drinking:</p>
+                    <label for="alcohol_yes"><input type="checkbox" id="alcohol_yes" name="alcohol" value="Yes">Yes</label>
+                    <label for="alcohol_no"><input type="checkbox" id="alcohol_no" name="alcohol" value="No">No</label>
+
+
+                    <br>
+                    <br>
+
+                    <div class="wd100">
+                        <button name="submit" type="submit" id="" data-submit="...Sending">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            <script src="form.js"></script>
+    </div>
+</section>
+<!-- Scroll-top-button -->
+<button class="scroll-to-top" aria-label="Scroll to top">
+    <i class='bx bxs-chevron-up-circle'></i>
+</button> 
+</body>
+</html>
